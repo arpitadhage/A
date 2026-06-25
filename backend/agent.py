@@ -6,6 +6,8 @@ from backend.agents.router import Router
 from backend.agents.planner import Planner
 from backend.agents.executor import Executor
 from dotenv import load_dotenv
+
+from streamlit_app import clean_response
 load_dotenv()
 
 class Agent:
@@ -68,12 +70,26 @@ class Agent:
 
         final_state, logs = self.executor.execute(plan, state)
 
-        return {
-            "intent": intent,
-            "plan": plan,
-            "logs": logs,
-            "final_state": final_state
-        }
+        clean_response = {
+             "response": (
+                final_state.get("summary")
+                or final_state.get("sentiment")
+                or final_state.get("explanation")
+                or final_state.get("code_explanation")
+                or final_state.get("response")
+                or "No response generated"
+        ),
+
+        "plan": plan,
+
+        # optional (for debugging / UI trace)
+        "extracted_text": final_state.get("contents", {})
+    }
+
+        return clean_response
+        
+        
+        
 
 # if __name__ == "__main__":
 
