@@ -194,6 +194,6 @@ Final analytical answer
 - Tool execution
 - Output formatting
 - Easily extensible for new tools
-  ---
+---
 ## 👨‍💻 Author
 Arpita Dhage
