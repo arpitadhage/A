@@ -6,3 +6,102 @@ venv/
 temp/
 .streamlit/
 sample_data/
+
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment Variables
+.env
+
+# -----------------------------
+# IDE
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Python Build
+# -----------------------------
+build/
+dist/
+*.egg-info/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# Temporary Files
+# -----------------------------
+temp/
+tmp/
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/
+
+# -----------------------------
+# Uploaded / Sample Files
+# -----------------------------
+sample_data/
+uploads/
+temp_files/
+
+# Ignore all PDFs, images, audio and videos
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.mp4
+*.avi
+*.mov
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Cache
+# -----------------------------
+.cache/
+
+# -----------------------------
+# SQLite
+# -----------------------------
+*.db
+*.sqlite3
