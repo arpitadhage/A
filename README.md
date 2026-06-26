@@ -8,7 +8,7 @@ Built as part of a **Generative AI Internship Assignment**, this project demonst
 
 ## 🚀 **Live Demo**
 
-🔗 [[Add your deployed URL here](https://infera-ai-agent-frontend-repo.onrender.com/)]
+🔗 [[Live](https://infera-ai-agent-frontend-repo.onrender.com/)]
 
 ---
 
@@ -104,7 +104,7 @@ Final Structured Text Output
 git clone https://github.com/arpitadhage/Infera-AI-Agent.git
 cd Infera-AI-Agent
 ```
-###2️⃣ Create Virtual Environment
+2️⃣ Create Virtual Environment
 ```bash
 python -m venv venv
 ```
@@ -117,17 +117,18 @@ Mac/Linux
 ```bash
 source venv/bin/activate
 ```
-###3️⃣ Install Dependencies
+3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 🔐 Environment Variables
 
 Create a .env file in root directory:
-
+```bsh
 GROQ_API_KEY=your_api_key_here
+```
 
-###▶️ Run the Project
+▶️ Run the Project
 Backend 
 ```bash
 uvicorn main:app --reload
@@ -136,7 +137,7 @@ Frontend
 ```bash
 streamlit run app.py
 ```
-###🐳 Docker Setup
+🐳 Docker Setup
 Build Image
 ```bash
 docker build -t infera-ai-agent .
@@ -145,9 +146,10 @@ Run Container
 ```bash
 docker run -p 8000:8000 infera-ai-agent
 ```
+---
 ##🧪 Sample Test Cases
 
-###✅ Audio Understanding
+✅ Audio Understanding
 Input: Audio lecture
 Output:
 Transcript
@@ -155,11 +157,11 @@ Transcript
 - 3 bullet points
 - 5-line summary
 
-###✅ PDF Question Answering
+✅ PDF Question Answering
 Input: PDF + “What are the action items?”
 Output: Extracted action items
 
-###✅ Image Code Explanation
+✅ Image Code Explanation
 Input: Screenshot of code
 Output:
 Explanation
@@ -167,18 +169,20 @@ Language detection
 Bug detection
 Time complexity
 
-###✅ Cross-Input Reasoning
+✅ Cross-Input Reasoning
 Input: PDF containing YouTube link + query
 Output:
 Extract URL
 Fetch transcript
 Summarize video
 
-###✅ Multi-File Comparison
+✅ Multi-File Comparison
 Input: Audio + PDF + query
 Output:
 Compare both sources
 Final analytical answer
+
+---
 
 ##🧩 Design Decisions
 - Modular tool-based architecture
@@ -190,16 +194,6 @@ Final analytical answer
 - Tool execution
 - Output formatting
 - Easily extensible for new tools
-  
-##📊 Evaluation Mapping
-- Criterion	Implementation
-- Correctness	Multi-modal processing + accurate outputs
-- Autonomy	LLM-based planning with tool chaining
-- Robustness	Error handling + fallback mechanisms
-- Explainability	Execution trace support
-- Code Quality	Modular FastAPI structure
-- UX	Chat-style interface + file upload
-- Bonus	Streaming + cost estimation ready
-
-👨‍💻 Author
+  ---
+##👨‍💻 Author
 Arpit Dhage
