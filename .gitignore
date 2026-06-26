@@ -7,10 +7,6 @@ temp/
 .streamlit/
 sample_data/
 
-
-# -----------------------------
-# Python
-# -----------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -89,10 +85,6 @@ temp_files/
 *.mp4
 *.avi
 *.mov
-
-# -----------------------------
-# Jupyter
-# -----------------------------
 .ipynb_checkpoints/
 
 
@@ -101,3 +93,10 @@ temp_files/
 
 *.db
 *.sqlite3
+backend/agents/__pycache__/
+backend/tools/__pycache__/
+backend/venv/lib/python3.11/site-packages/__pycache__/
+
+
+
+git rm -r --cached .
