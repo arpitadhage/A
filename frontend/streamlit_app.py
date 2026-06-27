@@ -8,8 +8,8 @@ import os
 
 # API_URL = f"{BASE_URL}/run-agent"
 
-st.write("DEBUG BASE_URL:", BASE_URL)
-st.write("DEBUG API_URL:", API_URL)
+# st.write("DEBUG BASE_URL:", BASE_URL)
+# st.write("DEBUG API_URL:", API_URL)
 
 BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000").rstrip("/")
 
