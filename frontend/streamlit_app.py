@@ -4,9 +4,13 @@ import requests
 
 import os
 
-BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000").rstrip("/")
+# BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000")
 
-API_URL = f"{BASE_URL}/run-agent"
+# API_URL = f"{BASE_URL}/run-agent"
+
+BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000")
+
+API_URL = f"{BASE_URL}run-agent"
 
 SUPPORTED_TYPES = [
     "pdf", "png", "jpg", "jpeg", "webp", "bmp",
