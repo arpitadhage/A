@@ -4,7 +4,7 @@ import requests
 
 import os
 
-BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000")
+BASE_URL = os.getenv("BACKEND_URL", "http://host.docker.internal:8000").rstrip("/")
 
 API_URL = f"{BASE_URL}/run-agent"
 
